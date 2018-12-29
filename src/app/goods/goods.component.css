@@ -4,6 +4,12 @@
 .faClock{
 	color: gainsboro;
 }
-.chevron-right{
+.chevron-red{
+	color:red;
+}
+.chevron-green{
+	color:green;
+}
+.chevron-blue{
 	color:blue;
 }

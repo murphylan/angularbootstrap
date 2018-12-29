@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from "@angular/router";
 import { faAngleDoubleUp, faYenSign, faPhone, faChevronCircleRight } from '@fortawesome/free-solid-svg-icons';
 import { faClock } from '@fortawesome/free-regular-svg-icons';
+
 
 @Component({
   selector: 'app-goods',
@@ -14,8 +16,17 @@ export class GoodsComponent implements OnInit {
   faYenSign = faYenSign;
   faPhone = faPhone;
   faChevronCircleRight = faChevronCircleRight;
+  private fragment: string;
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
+
+  goTop() {
+    this.route.fragment.subscribe(() => {
+      window.scrollTo(0, 0);
+    });
+    // document.querySelector('#top').scrollIntoView();
+    // document.querySelector('#' + this.fragment).scrollIntoView();
+  }
 
   ngOnInit() {
   }
