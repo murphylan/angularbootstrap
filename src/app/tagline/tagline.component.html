@@ -1,7 +1,7 @@
 <!-- Heading Row -->
 <div class="row my-4">
   <div class="col-lg-8">
-    <img class="img-fluid rounded" src="https://picsum.photos/900/400?random&t=${Math.random()}" alt="">
+    <img class="img-fluid rounded" src="../../assets/images/bridge.jpeg" alt="bridge">
   </div>
   <!-- /.col-lg-8 -->
   <div class="col-lg-4 text-secondary">
@@ -9,7 +9,9 @@
     <p>这是一个非常适合小型企业的模板。 它没有太多花哨的耀斑，但它充分利用了标准的Bootstrap核心组件。 随意将此模板用于您想要的任何项目！</p>
     <p>我们经营定制化培训，从某个知识点到全栈，各种套餐，自由搭配，包学会，培训方式灵活多样！</p>
     <p>我们也出售代码，服务！</p>
-    <a [routerLinkActive]="['active']" [routerLink]="['/home']" class="btn btn-primary btn-lg">广告招租!</a>
+    <a [routerLinkActive]="['active']" [routerLink]="['/home']">
+      <button type="button" class="btn btn-outline-primary">广告招租!</button>
+    </a>
   </div>
   <!-- /.col-md-4 -->
 </div>
@@ -21,5 +23,3 @@
     <p class="text-white m-0">广告招租：这个展示一些重要信息或显示一个聪明标语的好地方！</p>
   </div>
 </div>
-
- 
