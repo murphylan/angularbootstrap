@@ -1,25 +1,24 @@
 <!-- Heading Row -->
 <div class="row my-4">
   <div class="col-lg-8">
-    <img class="img-fluid rounded" src="http://placehold.it/900x400" alt="">
+    <img class="img-fluid rounded" src="https://picsum.photos/900/400?random&t=${Math.random()}" alt="">
   </div>
   <!-- /.col-lg-8 -->
-  <div class="col-lg-4">
-    <h1>Business Name or Tagline</h1>
-    <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it
-      makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you
-      want!</p>
-    <a class="btn btn-primary btn-lg" href="#">Call to Action!</a>
+  <div class="col-lg-4 text-secondary">
+    <h1>程序员的超市</h1>
+    <p>这是一个非常适合小型企业的模板。 它没有太多花哨的耀斑，但它充分利用了标准的Bootstrap核心组件。 随意将此模板用于您想要的任何项目！</p>
+    <p>我们经营定制化培训，从某个知识点到全栈，各种套餐，自由搭配，包学会，培训方式灵活多样！</p>
+    <p>我们也出售代码，服务！</p>
+    <a [routerLinkActive]="['active']" [routerLink]="['/home']" class="btn btn-primary btn-lg">广告招租!</a>
   </div>
   <!-- /.col-md-4 -->
 </div>
 <!-- /.row -->
 
 <!-- Call to Action Well -->
-<div class="card text-white bg-secondary my-4 text-center">
+<div class="card text-white bg-info my-4 text-center">
   <div class="card-body">
-    <p class="text-white m-0">This call to action card is a great place to showcase some important information or
-      display a clever tagline!</p>
+    <p class="text-white m-0">广告招租：这个展示一些重要信息或显示一个聪明标语的好地方！</p>
   </div>
 </div>
 

@@ -9,20 +9,36 @@ import { UiModule } from './ui/ui.module';
 import { TaglineComponent } from './tagline/tagline.component';
 import { GoodsComponent } from './goods/goods.component';
 import { BusinessComponent } from './business/business.component';
+import { HomeComponent } from './home/home.component';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
+import { AboutComponent } from './about/about.component';
+import { ServicesComponent } from './services/services.component';
+import { ContactComponent } from './contact/contact.component';
+ 
+library.add(fas, far);
+ 
 @NgModule({
   declarations: [
     AppComponent,
     TaglineComponent,
     GoodsComponent,
-    BusinessComponent
+    BusinessComponent,
+    HomeComponent,
+    AboutComponent,
+    ServicesComponent,
+    ContactComponent
   ],
   imports: [
     NgbModule,
     FormsModule,
     BrowserModule,
     AppRoutingModule,
-    UiModule
+    UiModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

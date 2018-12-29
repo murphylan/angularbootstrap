@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { faAngleDoubleUp, faYenSign, faPhone, faChevronCircleRight } from '@fortawesome/free-solid-svg-icons';
+import { faClock } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
   selector: 'app-goods',
@@ -6,6 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./goods.component.css']
 })
 export class GoodsComponent implements OnInit {
+
+  faAngleDoubleUp = faAngleDoubleUp;
+  faClock = faClock;
+  faYenSign = faYenSign;
+  faPhone = faPhone;
+  faChevronCircleRight = faChevronCircleRight;
 
   constructor() { }
 
