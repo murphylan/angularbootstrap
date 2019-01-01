@@ -4,11 +4,11 @@
   <div class="row">
 
     <div class="col-lg-3">
-      <h1 class="my-4">定制培训</h1>
+      <h1 class="my-4">服务内容</h1>
       <div class="list-group list-group-flush">
-        <a [routerLink]="['/services']" class="list-group-item">培训内容</a>
-        <a [routerLink]="['/services']" class="list-group-item">套餐价格</a>
-        <a [routerLink]="['/services']" class="list-group-item">软件开发</a>
+        <a [routerLink]="['/services']" (click)="goToContent()" class="list-group-item">定制培训</a>
+        <a [routerLink]="['/services']" (click)="goToPrice()" class="list-group-item">定制价格</a>
+        <a [routerLink]="['/services']" (click)="goToWebdev()" class="list-group-item">Web开发</a>
       </div>
     </div>
     <!-- /.col-lg-3 -->
@@ -18,7 +18,7 @@
       <div class="card mt-4">
         <img class="card-img-top img-fluid" src="../../assets/images/tree.jpeg" alt="">
         <div class="card-body">
-          <h3 class="card-title">Web开发定制培训</h3>
+          <h3 class="card-title">Web全栈开发定制内容</h3>
           <p class="card-text">
             全栈开发人员是当今最受追捧的专业人士。 我们热衷于将其才华横溢的专业人士转变为数字技术的多技能全栈开发人员（FSD）。
             全栈开发人员可以将编程语言，数据模型，技术工具和工程实践结合起来，以解决端到端的问题。 FSD应该能够
@@ -37,9 +37,9 @@
       </div>
       <!-- /.card -->
 
-      <div class="card card-outline-secondary my-4">
+      <div class="card card-outline-secondary my-4" id="fullcontent">
         <div class="card-header">
-          培训内容
+          定制培训
         </div>
         <div class="card-body">
           <p>HTML5，CSS3，BootStrap，JavaScript（ES6），Angular（5或更高版本）, Vue.js等。</p>
@@ -52,7 +52,7 @@
           <small class="text-muted">300. Java开发的核心</small>
           <hr>
           <p>NoSQL/SQL 数据库，ORM，电商 (SKU，SPU)等。</p>
-          <small class="text-muted">400. 持久化</small>
+          <small class="text-muted">400. 数据建模，持久化</small>
           <hr>
           <p>自动化测试，TDD / BDD，CI / CD，DevOps，Agile，Docker等。</p>
           <small class="text-muted">500. 工程实践与DevOps</small>
@@ -60,22 +60,42 @@
           <p>Express，LoopBack 3 / 4，API，REST，Async等。</p>
           <small class="text-muted">600. Node.js开发</small>
           <hr>
-          <a [routerLink]="['/services']" class="btn btn-success">我要咨询</a>
+          <p>微信公众号，小程序，支付，共享，投票等。</p>
+          <small class="text-muted">700. 微信开发</small>
+          <hr>
+          <button type="button" class="btn btn-sm btn-outline-success" placement="right" ngbPopover="15871352105"
+            popoverTitle="热线：">
+            咨询电话
+          </button>
         </div>
       </div>
       <!-- /.card -->
 
       <div class="card card-outline-secondary my-4">
-        <div class="card-header">
-          套餐价格
+        <div class="card-header" id="price">
+          定制价格
         </div>
         <div class="card-body">
           <p>根据您的知识水平，我们将每个问题评定为：</p>
           <p> 1 - 无知识；2 - 仅仅知道概念；3 - 可以实施简单方案；4 - 可以实施复杂方案；5 - 专家</p>
           <p>我们按照阶梯进行收费，从级别1到2的学习，如：搭建简单的demo环境，解决1-2个技术问题，我们收费不超过10元。</p>
-          <small class="text-muted">700. 具体的价格请来电咨询，另，本网站的便利店中有具体的套餐选择。</small>
+          <small class="text-muted">800. 具体的价格请来电咨询，另，本网站的便利店中有具体的套餐选择。</small>
           <hr>
-          <a [routerLink]="['/about']" class="btn btn-success">进入便利店</a>
+          <a [routerLink]="['/about']" class="btn btn-sm btn-outline-success">进入便利店</a>
+        </div>
+      </div>
+      <!-- /.card -->
+
+      <div class="card card-outline-secondary my-4">
+        <div class="card-header" id="webdev">
+          WEB开发
+        </div>
+        <div class="card-body">
+          <p>H5 网站开发</p>
+          <p>承接类似产品推广，企业宣传等的自适应网站，手机，电脑和Pad均适应。</p>
+          <small class="text-muted">900. 具体的价格请来电咨询，另，本网站的便利店中有具体的套餐选择。</small>
+          <hr>
+          <a [routerLink]="['/about']" class="btn btn-sm btn-outline-success">进入便利店</a>
         </div>
       </div>
       <!-- /.card -->
@@ -84,6 +104,10 @@
     <!-- /.col-lg-9 -->
 
   </div>
-
+  <div style="text-align:center">
+    <a (click)="goTop()">
+      <fa-icon [icon]="['fas', 'angle-double-up']" class="faCoffee"></fa-icon>
+    </a>
+  </div>
 </div>
 <!-- /.container -->
