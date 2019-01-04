@@ -12,10 +12,10 @@
   <div class="col-lg-4 col-sm-6 text-center mb-4" *ngFor="let lesson of lessons; let i=index;">
     <img class="rounded-circle img-fluid d-block mx-auto" style="width: 200px;height: 200px;" src="{{lesson.image}}"
       alt="">
-    <h4>{{lesson.name}}
+    <h4><a class="card-text text-secondary" target="_blank" href='{{lesson.link}}'>{{lesson.name}}</a>
       <fa-icon [icon]="['fas','yen-sign']" class="faCoffee"></fa-icon><small class="text-muted">{{lesson.price}}</small>
     </h4>
-    <div class="card-text text-secondary" class="" style="font-size:15px" *ngFor="let disp of lesson.discription">
+    <div class="card-text text-secondary" style="font-size:15px" *ngFor="let disp of lesson.discription">
         {{disp}}<br>
    </div>
   </div>
