@@ -1,23 +1,23 @@
 <!-- Introduction Row -->
-<h1 class="my-4 text-secondary">培训便利店
-  <small></small>
+<h1 class="my-4 text-secondary">
+  <small>个性化选择，量身定制，细到一个具体问题，我们都全力以赴！</small>
 </h1>
-<p class="my-4 text-secondary">每种产品赠送指导服务!</p>
+<p class="my-4 text-secondary">所有课程包学会!</p>
 
-<!-- Team Members Row -->
-<div class="row text-secondary">
-  <div class="col-lg-12">
-    <h2 class="my-4"></h2>
-  </div>
-  <div class="col-lg-4 col-sm-6 text-center mb-4" *ngFor="let lesson of lessons; let i=index;">
-    <img class="rounded-circle img-fluid d-block mx-auto" style="width: 200px;height: 200px;" src="{{lesson.image}}"
-      alt="">
-    <h4><a class="card-text text-secondary" target="_blank" href='{{lesson.link}}'>{{lesson.name}}</a>
-      <fa-icon [icon]="['fas','yen-sign']" class="faCoffee"></fa-icon><small class="text-muted">{{lesson.price}}</small>
-    </h4>
-    <div class="card-text text-secondary" style="font-size:15px" *ngFor="let disp of lesson.discription">
-        {{disp}}<br>
-   </div>
-  </div>
- 
+<div class="my-4 text-secondary">
+  <ul class="list-unstyled shadow" *ngFor="let lesson of lessons; let i=index;">
+    <a [routerLink]="['/about']" class="list-group-item list-group-item-action flex-column align-items-start">
+      <li class="media">
+        <div class="mr-3">{{i+1}}</div>
+        <img src="{{lesson.image}}" style="width: 100px;height: 100px;" class="mr-3" alt="{{lesson.name}}">
+        <div class="media-body">
+          <h5 class="mt-0 mb-1">{{lesson.name}}</h5>
+          <fa-icon [icon]="['fas','yen-sign']" class="faCoffee"></fa-icon>{{lesson.price}}
+          <div class="card-text text-secondary" style="font-size:15px" *ngFor="let disp of lesson.discription">
+            {{disp}}<br>
+          </div>
+        </div>
+      </li>
+    </a>
+  </ul>
 </div>

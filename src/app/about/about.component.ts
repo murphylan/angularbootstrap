@@ -18,10 +18,16 @@ export class AboutComponent implements OnInit {
       id: 1,
       name: 'Angular 6/7',
       image: "../../assets/images/angular2.svg",
-      price: 199,
+      price: 189,
       discription: [
-        '面向有2年HTML工作的网页开发人员',
-        '达成目标：学会类似本网站的功能',
+        `基础课程: 
+        你将学会使用Angular CLI安装Angular 6;
+        理解和创建组件;
+        理解和创建服务;
+        在Angular 6中使用HTML和CSS;
+        使用Angular 6路由;
+        使用Angular 6 HTTP客户端;
+        `,
       ],
       others: '',
       link: 'https://angular.io/',
@@ -31,7 +37,7 @@ export class AboutComponent implements OnInit {
       id: 2,
       name: 'BootStrap4',
       image: "../../assets/images/feature-icon.svg",
-      price: 76,
+      price: 176,
       discription: [
         '面向有2年HTML工作的网页开发人员',
         '达成目标：学会类似本网站的功能',
@@ -42,9 +48,9 @@ export class AboutComponent implements OnInit {
     },
     {
       id: 3,
-      name: 'Python',
+      name: 'Python 3',
       image: "../../assets/images/Python-logo.svg",
-      price: 2,
+      price: 3,
       discription: [
         'Python3代码：移动照片到制定位置',
         '目标：按照GPS或者时间进行排序',
@@ -57,7 +63,7 @@ export class AboutComponent implements OnInit {
       id: 4,
       name: 'Node.js',
       image: "../../assets/images/Node.js_logo.svg",
-      price: 26,
+      price: 126,
       discription: [
         '面向有2年Javascript工作的开发人员',
         '达成目标：定制',
@@ -83,7 +89,7 @@ export class AboutComponent implements OnInit {
       id: 6,
       name: 'Spring Boot',
       image: "../../assets/images/icon-spring-boot.svg",
-      price: 6,
+      price: 66,
       discription: [
         '面向有1年Java基础的开发人员',
         '达成目标：定制',
@@ -135,7 +141,7 @@ export class AboutComponent implements OnInit {
       id: 10,
       name: 'Loopback 3/4',
       image: "../../assets/images/loopback.svg",
-      price: 86,
+      price: 186,
       discription: [
         '面向有1年Node.js基础的开发人员',
         '达成目标：定制',
@@ -150,7 +156,7 @@ export class AboutComponent implements OnInit {
       image: "../../assets/images/Spring-Security-logo.jpg",
       price: 126,
       discription: [
-        '面向有1年Node.js基础的开发人员',
+        '面向有1年Spring基础的开发人员',
         '达成目标：定制',
       ],
       others: '',
