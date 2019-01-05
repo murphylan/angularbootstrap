@@ -1,23 +1,37 @@
 <!-- Introduction Row -->
 <h1 class="my-4 text-secondary">
-  <small>个性化选择，量身定制，细到一个具体问题，我们都全力以赴！</small>
+  <small>个性化选择，量身定制。</small>
 </h1>
 <p class="my-4 text-secondary">所有课程包学会!</p>
 
-<div class="my-4 text-secondary">
-  <ul class="list-unstyled shadow" *ngFor="let lesson of lessons; let i=index;">
-    <a [routerLink]="['/about']" class="list-group-item list-group-item-action flex-column align-items-start">
-      <li class="media">
-        <div class="mr-3">{{i+1}}</div>
-        <img src="{{lesson.image}}" style="width: 100px;height: 100px;" class="mr-3" alt="{{lesson.name}}">
-        <div class="media-body">
-          <h5 class="mt-0 mb-1">{{lesson.name}}</h5>
-          <fa-icon [icon]="['fas','yen-sign']" class="faCoffee"></fa-icon>{{lesson.price}}
-          <div class="card-text text-secondary" style="font-size:15px" *ngFor="let disp of lesson.discription">
-            {{disp}}<br>
-          </div>
+<div class="row text-secondary">
+    <div class="col-md-3 mb-3" *ngFor="let lesson of lessons; let i=index;">
+      <!-- Card -->
+      <div class="card shadow" >
+        <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top center-block" src="{{lesson.image}}" style="width: 100px;height: 100px;"  alt="Card image cap">
         </div>
-      </li>
-    </a>
-  </ul>
-</div>
+        <!-- Card content -->
+        <div class="card-body text-secondary">
+          <!-- Title -->
+          <h4 class="card-title text-center">{{lesson.name}}</h4>
+          <hr>
+          <!-- Text -->
+          <div class="card-text text-secondary" style="font-size:15px" *ngFor="let disp of lesson.discription">
+              {{disp}}<br>
+            </div>
+        </div>
+        <!-- Card footer -->
+        <div class="rounded-bottom mdb-color lighten-3 text-center pt-3">
+          <ul class="list-unstyled list-inline font-small">
+            <li class="list-inline-item pr-2 white-text"><fa-icon [icon]="['fas','yen-sign']" class="faCoffee"></fa-icon>{{lesson.price}}</li>
+            <li class="list-inline-item pr-2 white-text"><span class="text-warning">&#9733;</span><small class="text-muted">{{lesson.others}}</small></li>
+            <li class="list-inline-item pr-2"></li>
+            <li class="list-inline-item pr-2"><small class="text-muted"></small></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Card -->
+    </div>
+  </div>
