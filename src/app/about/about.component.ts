@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from "@angular/router";
 import { Lesson } from '../Lesson';
 
 @Component({
@@ -8,7 +9,13 @@ import { Lesson } from '../Lesson';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
+
+  goTop() {
+    this.route.fragment.subscribe(() => {
+      window.scrollTo(0, 0);
+    });
+  }
 
   ngOnInit() {
   }

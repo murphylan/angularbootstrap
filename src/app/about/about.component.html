@@ -15,7 +15,7 @@
         <!-- Card content -->
         <div class="card-body text-secondary">
           <!-- Title -->
-          <h4 class="card-title text-center">{{lesson.name}}</h4>
+          <h4 class="card-title text-center"><a target="_blank" href='{{lesson.link}}'>{{lesson.name}}</a></h4>
           <hr>
           <!-- Text -->
           <div class="card-text text-secondary" style="font-size:15px" *ngFor="let disp of lesson.discription">
@@ -34,4 +34,10 @@
       </div>
       <!-- Card -->
     </div>
+  </div>
+
+  <div style="text-align:center">
+    <a (click)="goTop()">
+      <fa-icon [icon]="['fas', 'angle-double-up']" class="faCoffee"></fa-icon>
+    </a>
   </div>
