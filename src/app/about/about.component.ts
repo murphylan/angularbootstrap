@@ -23,22 +23,22 @@ export class AboutComponent implements OnInit {
   lessons: Lesson[] = [
     {
       id: 1,
-      name: 'Angular 6/7',
+      name: 'Angular 7',
       image: "../../assets/images/angular2.svg",
-      price: 189,
+      price: 220,
       discription: [
         '面向有2年网页开发人员',
         '达成目标：学会类似本网站的功能',
       ],
       others: '量贩式选择',
-      link: 'https://angular.io/',
+      link: 'http://docedit.cn:8082/angular/html/index.html',
       phone: '',
     },
     {
       id: 2,
       name: 'BootStrap4',
       image: "../../assets/images/feature-icon.svg",
-      price: 176,
+      price: 200,
       discription: [
         '面向有2年网页开发人员',
         '达成目标：学会类似本网站的功能',
@@ -57,14 +57,14 @@ export class AboutComponent implements OnInit {
         '目标：按照时间进行排序',
       ],
       others: 'Python3 代码',
-      link: 'https://www.python.org/',
+      link: 'http://docedit.cn:8082/python/html/index.html',
       phone: '',
     },
     {
       id: 4,
       name: 'Node.js',
       image: "../../assets/images/Node.js_logo.svg",
-      price: 126,
+      price: 210,
       discription: [
         '面向有2年Javascript的开发人员',
         '达成目标：定制',
@@ -77,7 +77,7 @@ export class AboutComponent implements OnInit {
       id: 5,
       name: 'Spring',
       image: "../../assets/images/icon-spring-framework.svg",
-      price: 16,
+      price: 220,
       discription: [
         '面向有2年Java基础的开发人员',
         '达成目标：定制',
@@ -90,7 +90,7 @@ export class AboutComponent implements OnInit {
       id: 6,
       name: 'Spring Boot',
       image: "../../assets/images/icon-spring-boot.svg",
-      price: 66,
+      price: 210,
       discription: [
         '面向有1年Java基础的开发人员',
         '达成目标：定制',
@@ -103,7 +103,7 @@ export class AboutComponent implements OnInit {
       id: 7,
       name: 'Flowable',
       image: "../../assets/images/flowable.svg",
-      price: 189,
+      price: 230,
       discription: [
         '面向有2年BPMN的开发人员',
         '达成目标：定制',
@@ -116,7 +116,7 @@ export class AboutComponent implements OnInit {
       id: 8,
       name: 'Spring Cloud',
       image: "../../assets/images/icon-spring-cloud.svg",
-      price: 199,
+      price: 299,
       discription: [
         '面向有2年Java基础的开发人员',
         '达成目标：定制',
@@ -129,7 +129,7 @@ export class AboutComponent implements OnInit {
       id: 9,
       name: 'Spring-Cloud-Data-Flow',
       image: "../../assets/images/icon-spring-cloud-data-flow.svg",
-      price: 176,
+      price: 280,
       discription: [
         '面向有2年Java基础的开发人员',
         '达成目标：定制',
@@ -142,20 +142,20 @@ export class AboutComponent implements OnInit {
       id: 10,
       name: 'Loopback 3/4',
       image: "../../assets/images/loopback.svg",
-      price: 186,
+      price: 300,
       discription: [
         '面向有1年Node.js基础的开发人员',
         '达成目标：定制',
       ],
       others: '量贩式选择',
-      link: 'https://loopback.io/',
+      link: 'http://docedit.cn:8082/loopback/html/index.html',
       phone: '',
     },
     {
       id: 11,
       name: 'Spring-Security',
       image: "../../assets/images/Spring-Security-logo.jpg",
-      price: 126,
+      price: 260,
       discription: [
         '面向有1年Spring基础的开发人员',
         '达成目标：定制',
@@ -168,7 +168,7 @@ export class AboutComponent implements OnInit {
       id: 12,
       name: 'Apache Camel',
       image: "../../assets/images/Apache-camel-logo.jpg",
-      price: 176,
+      price: 266,
       discription: [
         '面向有1年Spring基础的开发人员',
         '达成目标：定制',
