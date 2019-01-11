@@ -25,7 +25,7 @@ export class AboutComponent implements OnInit {
       id: 1,
       name: 'Angular 7',
       image: "../../assets/images/angular2.svg",
-      price: 220,
+      price: 1220,
       discription: [
         '面向有2年网页开发人员',
         '达成目标：学会类似本网站的功能',
@@ -38,7 +38,7 @@ export class AboutComponent implements OnInit {
       id: 2,
       name: 'BootStrap4',
       image: "../../assets/images/feature-icon.svg",
-      price: 200,
+      price: 600,
       discription: [
         '面向有2年网页开发人员',
         '达成目标：学会类似本网站的功能',
@@ -64,7 +64,7 @@ export class AboutComponent implements OnInit {
       id: 4,
       name: 'Node.js',
       image: "../../assets/images/Node.js_logo.svg",
-      price: 210,
+      price: 1210,
       discription: [
         '面向有2年Javascript的开发人员',
         '达成目标：定制',
@@ -77,7 +77,7 @@ export class AboutComponent implements OnInit {
       id: 5,
       name: 'Spring',
       image: "../../assets/images/icon-spring-framework.svg",
-      price: 220,
+      price: 920,
       discription: [
         '面向有2年Java基础的开发人员',
         '达成目标：定制',
@@ -90,7 +90,7 @@ export class AboutComponent implements OnInit {
       id: 6,
       name: 'Spring Boot',
       image: "../../assets/images/icon-spring-boot.svg",
-      price: 210,
+      price: 910,
       discription: [
         '面向有1年Java基础的开发人员',
         '达成目标：定制',
@@ -103,7 +103,7 @@ export class AboutComponent implements OnInit {
       id: 7,
       name: 'Flowable',
       image: "../../assets/images/flowable.svg",
-      price: 230,
+      price: 1230,
       discription: [
         '面向有2年BPMN的开发人员',
         '达成目标：定制',
@@ -116,7 +116,7 @@ export class AboutComponent implements OnInit {
       id: 8,
       name: 'Spring Cloud',
       image: "../../assets/images/icon-spring-cloud.svg",
-      price: 299,
+      price: 999,
       discription: [
         '面向有2年Java基础的开发人员',
         '达成目标：定制',
@@ -129,7 +129,7 @@ export class AboutComponent implements OnInit {
       id: 9,
       name: 'Spring-Cloud-Data-Flow',
       image: "../../assets/images/icon-spring-cloud-data-flow.svg",
-      price: 280,
+      price: 980,
       discription: [
         '面向有2年Java基础的开发人员',
         '达成目标：定制',
@@ -142,7 +142,7 @@ export class AboutComponent implements OnInit {
       id: 10,
       name: 'Loopback 3/4',
       image: "../../assets/images/loopback.svg",
-      price: 300,
+      price: 900,
       discription: [
         '面向有1年Node.js基础的开发人员',
         '达成目标：定制',
@@ -155,7 +155,7 @@ export class AboutComponent implements OnInit {
       id: 11,
       name: 'Spring-Security',
       image: "../../assets/images/Spring-Security-logo.jpg",
-      price: 260,
+      price: 860,
       discription: [
         '面向有1年Spring基础的开发人员',
         '达成目标：定制',
@@ -168,13 +168,65 @@ export class AboutComponent implements OnInit {
       id: 12,
       name: 'Apache Camel',
       image: "../../assets/images/Apache-camel-logo.jpg",
-      price: 266,
+      price: 880,
       discription: [
         '面向有1年Spring基础的开发人员',
         '达成目标：定制',
       ],
       others: '量贩式选择',
       link: 'http://camel.apache.org/',
+      phone: '',
+    },
+    {
+      id: 13,
+      name: '公众号/小程序',
+      image: "../../assets/images/wechat.svg",
+      price: 866,
+      discription: [
+        '面向有1年Html基础的开发人员',
+        '达成目标：定制',
+      ],
+      others: '量贩式选择',
+      link: 'https://web.wechat.com/',
+      phone: '',
+    },
+    {
+      id: 14,
+      name: '自动化测试',
+      image: "../../assets/images/cucumber-logo.svg",
+      price: 900,
+      discription: [
+        '面向有1年Html基础的开发人员',
+        '达成目标：定制',
+      ],
+      others: '量贩式选择',
+      link: 'https://cucumber.io/',
+      phone: '',
+    },
+    {
+      id: 15,
+      name: 'Docker',
+      image: "../../assets/images/docker-docs-logo.svg",
+      price: 880,
+      discription: [
+        '面向有1年工作经验的开发人员',
+        '达成目标：定制',
+      ],
+      others: '量贩式选择',
+      link: 'https://docs.docker.com/',
+      phone: '',
+    },
+    {
+      id: 16,
+      name: 'Java',
+      image: "../../assets/images/java.svg",
+      price: 680,
+      discription: [
+        '面向零基础的人员',
+        '达成目标：定制',
+      ],
+      others: '量贩式选择',
+      link: 'https://www.java.com',
       phone: '',
     },
   ]

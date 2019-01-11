@@ -7,3 +7,10 @@
  .faCoffee {
 	color: hsl(205, 87%, 79%);
 }
+.my-custom-class {
+    background:hsl(205, 87%, 79%);
+    font-size: 125%;
+  }
+  .my-custom-class .arrow::after {
+    border-top-color:hsl(205, 87%, 79%);
+  }
