@@ -19,14 +19,70 @@ export class AboutComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  lessonsPackage: Lesson[] = [
+    {
+      id: 1,
+      name: '经典A+B组合',
+      image: "../../assets/images/ab.svg",
+      price: 920,
+      discription: [
+        'Angular+BootStrap目前是最热门的组合',
+        '前端技术快餐，本网站的技术就是选此组合',
+      ],
+      detail: [
+        'Angular 7: 前端热门框架',
+        'BootStrap 4: 自适应界面的框架',
+      ],
+      others: '推荐1人，学费减少10%',
+      link: 'http://docedit.cn:8082/angular/html/index.html',
+      phone: '',
+    },
+    {
+      id: 2,
+      name: '经典N+B组合',
+      image: "../../assets/images/nb.svg",
+      price: 920,
+      discription: [
+        'Node+BootStrap目前是最热门的组合',
+        '一站式学习，直接成为前端专家',
+      ],
+      detail: [
+        'Node: 热门技术，你必须掌握',
+        'BootStrap 4: 自适应界面的框架',
+      ],
+      others: '热门系列',
+      link: 'http://docedit.cn:8082/loopback/html/index.html',
+      phone: '',
+    },
+    {
+      id: 3,
+      name: 'Spring系列组合',
+      image: "../../assets/images/sbb.svg",
+      price: 920,
+      discription: [
+        'Spring+BPM 一站式解决后端问题',
+        '解决流程系统的问题，我们只推荐最好的',
+      ],
+      detail: [
+        'Spring Boot + Security: App的必备',
+        'Flowable: 工作流的最佳践行实现',
+      ],
+      others: 'Java技术栈的不二选择',
+      link: 'https://spring.io/',
+      phone: '',
+    },
+  ];
   lessons: Lesson[] = [
     {
       id: 1,
       name: 'Angular 7',
       image: "../../assets/images/angular2.svg",
-      price: 1220,
+      price: 920,
       discription: [
+        '面向有2年网页开发人员',
+        '达成目标：学会类似本网站的功能',
+      ],
+      detail: [
         '面向有2年网页开发人员',
         '达成目标：学会类似本网站的功能',
       ],
@@ -43,6 +99,10 @@ export class AboutComponent implements OnInit {
         '面向有2年网页开发人员',
         '达成目标：学会类似本网站的功能',
       ],
+      detail: [
+        '面向有2年网页开发人员',
+        '达成目标：学会类似本网站的功能',
+      ],
       others: '量贩式选择',
       link: 'https://getbootstrap.com/',
       phone: '',
@@ -55,6 +115,10 @@ export class AboutComponent implements OnInit {
       discription: [
         '全目录检索，过滤，并移动照片',
         '目标：按照时间进行排序',
+      ],
+      detail: [
+        '面向有2年网页开发人员',
+        '达成目标：学会类似本网站的功能',
       ],
       others: 'Python3 代码',
       link: 'http://docedit.cn:8082/python/html/index.html',
@@ -69,6 +133,10 @@ export class AboutComponent implements OnInit {
         '面向有2年Javascript的开发人员',
         '达成目标：定制',
       ],
+      detail: [
+        '面向有2年网页开发人员',
+        '达成目标：学会类似本网站的功能',
+      ],
       others: '量贩式选择',
       link: 'https://nodejs.org/',
       phone: '',
@@ -81,6 +149,10 @@ export class AboutComponent implements OnInit {
       discription: [
         '面向有2年Java基础的开发人员',
         '达成目标：定制',
+      ],
+      detail: [
+        '面向有2年网页开发人员',
+        '达成目标：学会类似本网站的功能',
       ],
       others: '量贩式选择',
       link: 'https://spring.io/',
@@ -95,6 +167,10 @@ export class AboutComponent implements OnInit {
         '面向有1年Java基础的开发人员',
         '达成目标：定制',
       ],
+      detail: [
+        '面向有2年网页开发人员',
+        '达成目标：学会类似本网站的功能',
+      ],
       others: '量贩式选择',
       link: 'https://spring.io/projects/spring-boot',
       phone: '',
@@ -107,6 +183,10 @@ export class AboutComponent implements OnInit {
       discription: [
         '面向有2年BPMN的开发人员',
         '达成目标：定制',
+      ],
+      detail: [
+        '面向有2年网页开发人员',
+        '达成目标：学会类似本网站的功能',
       ],
       others: '量贩式选择',
       link: 'https://www.flowable.org/',
@@ -121,6 +201,10 @@ export class AboutComponent implements OnInit {
         '面向有2年Java基础的开发人员',
         '达成目标：定制',
       ],
+      detail: [
+        '面向有2年网页开发人员',
+        '达成目标：学会类似本网站的功能',
+      ],
       others: '量贩式选择',
       link: 'https://cloud.spring.io',
       phone: '',
@@ -133,6 +217,10 @@ export class AboutComponent implements OnInit {
       discription: [
         '面向有2年Java基础的开发人员',
         '达成目标：定制',
+      ],
+      detail: [
+        '面向有2年网页开发人员',
+        '达成目标：学会类似本网站的功能',
       ],
       others: '量贩式选择',
       link: 'https://cloud.spring.io/spring-cloud-dataflow/',
@@ -147,6 +235,10 @@ export class AboutComponent implements OnInit {
         '面向有1年Node.js基础的开发人员',
         '达成目标：定制',
       ],
+      detail: [
+        '面向有2年网页开发人员',
+        '达成目标：学会类似本网站的功能',
+      ],
       others: '量贩式选择',
       link: 'http://docedit.cn:8082/loopback/html/index.html',
       phone: '',
@@ -159,6 +251,10 @@ export class AboutComponent implements OnInit {
       discription: [
         '面向有1年Spring基础的开发人员',
         '达成目标：定制',
+      ],
+      detail: [
+        '面向有2年网页开发人员',
+        '达成目标：学会类似本网站的功能',
       ],
       others: '量贩式选择',
       link: 'https://spring.io/projects/spring-security',
@@ -173,6 +269,10 @@ export class AboutComponent implements OnInit {
         '面向有1年Spring基础的开发人员',
         '达成目标：定制',
       ],
+      detail: [
+        '面向有2年网页开发人员',
+        '达成目标：学会类似本网站的功能',
+      ],
       others: '量贩式选择',
       link: 'http://camel.apache.org/',
       phone: '',
@@ -185,6 +285,10 @@ export class AboutComponent implements OnInit {
       discription: [
         '面向有1年Html基础的开发人员',
         '达成目标：定制',
+      ],
+      detail: [
+        '面向有2年网页开发人员',
+        '达成目标：学会类似本网站的功能',
       ],
       others: '量贩式选择',
       link: 'https://web.wechat.com/',
@@ -199,6 +303,10 @@ export class AboutComponent implements OnInit {
         '面向有1年Html基础的开发人员',
         '达成目标：定制',
       ],
+      detail: [
+        '面向有2年网页开发人员',
+        '达成目标：学会类似本网站的功能',
+      ],
       others: '量贩式选择',
       link: 'https://cucumber.io/',
       phone: '',
@@ -212,6 +320,10 @@ export class AboutComponent implements OnInit {
         '面向有1年工作经验的开发人员',
         '达成目标：定制',
       ],
+      detail: [
+        '面向有2年网页开发人员',
+        '达成目标：学会类似本网站的功能',
+      ],
       others: '量贩式选择',
       link: 'https://docs.docker.com/',
       phone: '',
@@ -224,6 +336,10 @@ export class AboutComponent implements OnInit {
       discription: [
         '面向零基础的人员',
         '达成目标：定制',
+      ],
+      detail: [
+        '面向有2年网页开发人员',
+        '达成目标：学会类似本网站的功能',
       ],
       others: '量贩式选择',
       link: 'https://www.java.com',
