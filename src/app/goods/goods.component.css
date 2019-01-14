@@ -13,3 +13,7 @@
 .chevron-blue{
 	color:blue;
 }
+.card-img-top {
+    height: 15rem;
+    object-fit: cover;
+}
