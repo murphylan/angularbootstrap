@@ -1,21 +1,27 @@
 <!-- Introduction Row -->
-<h1 class="my-4 text-secondary">
-  <small>个性化选择，量身定制。</small>
-</h1>
-<div class="alert alert-primary" role="alert">推荐职场套餐! 📢 庆祝本培训机构书籍上市，微信朋友圈转发此网站，积满108赞，赠送任何1个套餐。</div>
+<h4 class="my-4 text-secondary">
+  <small>We introduced this course that compiles all technologies in perfect sync to help developers transition from a
+    simple developer to become a Full Stack Developer.</small>
+</h4>
+<div class="alert alert-primary" role="alert">Recommended ! 📢 The latest Java full stack training course in this
+  summer,
+  refer to details: <a class="btn-floating lighten-3" target="_blank"
+    href="https://github.com/murphylan/tutorial">https://github.com/murphylan/tutorial</a></div>
 
 <div class="row text-secondary">
   <div class="col-md-4 mb-4" *ngFor="let lesson of lessonsPackage; let i=index;">
     <!-- Card -->
     <div class="card shadow">
       <!-- Card image -->
-      <img class="card-img-top center-block" src="{{lesson.image}}" style="width: 200px;" alt="Card image cap">
+      <img class="card-img-top center-block" src="{{lesson.image}}" style="width: 200px; height: 75px;"
+        alt="Card image cap">
       <!-- Card content -->
       <div class="card-body text-secondary">
         <!-- Title -->
         <h5 class="card-title text-center"><a target="_blank" href='{{lesson.link}}'>{{lesson.name}}</a></h5>
         <!-- Text -->
-        <div popoverClass="my-custom-class" placement="top" ngbPopover="{{lesson.discription}}" popoverTitle="{{lesson.name}}">
+        <div popoverClass="my-custom-class" placement="top" ngbPopover="{{lesson.discription}}"
+          popoverTitle="{{lesson.name}}">
           <div class="card-text" style="font-size:15px" *ngFor="let disp of lesson.discription">
             {{disp}}<br>
           </div>
@@ -30,7 +36,8 @@
           <li class="list-inline-item pr-2 white-text">
             <fa-icon [icon]="['fas','yen-sign']" class="faCoffee"></fa-icon>{{lesson.price}}
           </li>
-          <li class="list-inline-item pr-2 white-text"><span class="text-warning">&#9733;</span><small class="text-muted">{{lesson.others}}</small></li>
+          <li class="list-inline-item pr-2 white-text"><span class="text-warning">&#9733;</span><small
+              class="text-muted">{{lesson.others}}</small></li>
           <li class="list-inline-item pr-2"></li>
           <li class="list-inline-item pr-2"><small class="text-muted"></small></li>
         </ul>
@@ -40,22 +47,26 @@
   </div>
 </div>
 
-<div class="alert alert-primary" role="alert">精选全栈主题，所有课程包学会!</div>
+<div class="alert alert-primary" role="alert">In addition to theory based learning, the course also focuses on practical
+  applications by covering multiple projects in great detail, helping you learn with hands-on experience.</div>
 
 <div class="row text-secondary">
-  <div class="col-md-3 mb-3" *ngFor="let lesson of lessons; let i=index;">
+  <div class="col-6 col-md-3 mb-3" *ngFor="let lesson of lessons; let i=index;">
     <!-- Card -->
     <div class="card shadow">
       <!-- Card image -->
       <div class="view overlay">
-        <img class="card-img-top center-block" src="{{lesson.image}}" style="width: 100px;height: 100px;" alt="Card image cap">
+        <img class="card-img-top center-block" src="{{lesson.image}}" style="width: 100px;height: 100px;"
+          alt="Card image cap">
       </div>
       <!-- Card footer -->
       <div class="rounded-bottom mdb-color lighten-3 text-center pt-3">
         <ul class="list-unstyled list-inline font-small">
           <li class="list-inline-item pr-2 white-text"><small class="text-muted"></small></li>
-          <li class="list-inline-item pr-2"><small class="text-muted"><a target="_blank" href='{{lesson.link}}'>{{lesson.name}}</a></small></li>
-          <li class="list-inline-item pr-2 white-text"><span class="text-warning">&#9733;</span><small class="text-muted">{{lesson.others}}</small></li>
+          <li class="list-inline-item pr-2"><small class="text-muted"><a target="_blank"
+                href='{{lesson.link}}'>{{lesson.name}}</a></small></li>
+          <li class="list-inline-item pr-2 white-text"><span class="text-warning">&#9733;</span><small
+              class="text-muted">{{lesson.others}}</small></li>
           <li class="list-inline-item pr-2"><small class="text-muted">
               <fa-icon [icon]="['fas','yen-sign']" class="faCoffee"></fa-icon>{{lesson.price}}
             </small></li>

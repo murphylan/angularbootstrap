@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from "@angular/router";
-import { faAngleDoubleUp, faYenSign, faPhone, faChevronCircleRight, faEllipsisV } from '@fortawesome/free-solid-svg-icons';
+import { faAngleDoubleUp, faYenSign, faPhone, faAngleDoubleRight, faEllipsisV } from '@fortawesome/free-solid-svg-icons';
 import { faClock } from '@fortawesome/free-regular-svg-icons';
 
 
@@ -15,7 +15,7 @@ export class GoodsComponent implements OnInit {
   faClock = faClock;
   faYenSign = faYenSign;
   faPhone = faPhone;
-  faChevronCircleRight = faChevronCircleRight;
+  faAngleDoubleRight = faAngleDoubleRight;
   faEllipsisV = faEllipsisV;
   private fragment: string;
 
